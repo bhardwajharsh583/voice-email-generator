@@ -1,0 +1,27 @@
+.mailer{
+    background-color: rgb(56, 53, 53);
+    padding-top: 20px;
+    height: 100vh;
+    background-image: url('https://www.fg-a.com/wallpapers/yellow-flowers-green.jpg');
+    background-size: cover;
+}
+.mailerHeading{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: black;
+}
+.container.border{
+    width: 50%;
+    background-color: rgba(85, 119, 91, 0.5);
+}
+.btn.btn-info{
+    padding-bottom: 10px;
+}
+.submitForm{
+    padding-bottom: 10px;
+}
+.mailerSubHeading{
+    text-align: center;
+    font-style: italic;
+}
