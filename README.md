@@ -19,11 +19,14 @@ You may also see any lint errors in the console.
 # Getting Started with Alan SDK for voice commands
 
 You will be required to install alanai first:
-###`npm install @alan-ai/alan-sdk-web`
+### `npm install @alan-ai/alan-sdk-web`
 Create an account on [Alan platform](https://alan.app/).\
 Go through the docs for [react](https://alan.app/docs/tutorials/web/integrating-react-app/) on how to add Alan button to your project and create a script according to your own convenience.\
 
 # Getting started with emailjs
+
+You will be required to install emailjs first, run: 
+### `npm install emailjs`
 Create an account on [emailjs](https://www.emailjs.com/).\
 After login create a Gmail service inside the option 'Email Services'.\
 Create an email template as per your own requirements.
