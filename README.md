@@ -22,6 +22,7 @@ You will be required to install alanai first:
 ### `npm install @alan-ai/alan-sdk-web`
 Create an account on [Alan platform](https://alan.app/).\
 Go through the docs for [react](https://alan.app/docs/tutorials/web/integrating-react-app/) on how to add Alan button to your project and create a script according to your own convenience.
+### Note: For making alan hear email ids more accurately, try speaking email ids alphabet by alphabet and use 'at' in place of '@'. 
 
 # Getting started with emailjs
 
