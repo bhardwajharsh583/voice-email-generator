@@ -21,7 +21,7 @@ You may also see any lint errors in the console.
 You will be required to install alanai first:
 ### `npm install @alan-ai/alan-sdk-web`
 Create an account on [Alan platform](https://alan.app/).\
-Go through the docs for [react](https://alan.app/docs/tutorials/web/integrating-react-app/) on how to add Alan button to your project and create a script according to your own convenience.\
+Go through the docs for [react](https://alan.app/docs/tutorials/web/integrating-react-app/) on how to add Alan button to your project and create a script according to your own convenience.
 
 # Getting started with emailjs
 
