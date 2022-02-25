@@ -31,6 +31,6 @@ You will be required to install emailjs first, run:
 Create an account on [emailjs](https://www.emailjs.com/).\
 After login create a Gmail service inside the option 'Email Services'.\
 Create an email template as per your own requirements.
-## Note 1: Dont forget to use your own service_id(emailjs), template_id(emailjs), user_id(emailjs) and key(alan ai) inside the project and do read a small documentary [here](https://www.emailjs.com/docs/examples/reactjs/) 
-## Note 2: For personal usage, emailjs will send emails from your registered email id, so dont panic if your mail does not come from senderID :P
+### Note 1: Dont forget to use your own service_id(emailjs), template_id(emailjs), user_id(emailjs) and key(alan ai) inside the project and do read a small documentary [here](https://www.emailjs.com/docs/examples/reactjs/) 
+### Note 2: For personal usage, emailjs will send emails from your registered email id, so dont panic if your mail does not come from senderID :P
 
