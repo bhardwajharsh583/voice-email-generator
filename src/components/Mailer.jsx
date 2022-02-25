@@ -5,12 +5,16 @@ import alanBtn from '@alan-ai/alan-sdk-web';
 
 export default function Mailer() {
     const form = useRef();
+    
+    const AK  = process.env.REACT_APP_ALAN_KEY;
+    const SID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+    const TID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+    const UID = process.env.REACT_APP_EMAILJS_USER_ID;
 
-    useEffect(() => {
+    useEffect(() => { 
         alanBtn({
-            key: '529f3d2462ad5e08c1386ac5152de8472e956eca572e1d8b807a3e2338fdd0dc/stage',
+            key: AK,
             onCommand: (commandData) => {
-                console.log(commandData);
                 
                 if (commandData.command === 'sender') {
                     form.current.from_email.value = commandData.data;
@@ -32,18 +36,18 @@ export default function Mailer() {
                         .then((result) => {
                             console.log(result.text);
                         }, (error) => {
-                            console.log(error.text);
+                            console.log(error.text); 
                         });
                     }
                     sendEmail();
                 }
             }
         });
-      }, []);
+      }, [AK]); 
     function sendEmail(e) {
         e.preventDefault();
         console.log(form.current.from_name.value);
-        emailjs.sendForm('service_25cnirb', 'template_l42qspc', form.current , 'user_3TgrzvbtVAHzifsBtaHGz')
+        emailjs.sendForm(SID, TID, form.current , UID)
         .then((result) => {
             console.log(result.text);
         }, (error) => {
