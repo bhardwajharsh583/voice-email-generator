@@ -1,0 +1,55 @@
+// YOU CAN CHANGE THIS SCRIPT AS PER YOUR OWN NEEDS
+intent('i want to (mail|email) ',p=>{
+   p.play('Okay,working on it'); 
+   p.play('please tell me your name');
+   p.then(entername1);
+   
+});
+let entername1=context(()=>{
+    intent('$(name* (.*))',p=>{ 
+        p.play(`The name entered is:  ${p.name.value}.`);
+        let msgg = p.name.value;
+        p.play({"command":"myName","data":msgg});
+        p.play('please tell me your email'); 
+        p.then(enteremail1); 
+    });
+});
+let enteremail1=context(()=>{
+    intent('$(eail* (.*))',p=>{ 
+        p.play(`The mail that is entered is: ${p.eail.value.split('at').join('@').split(" ").join('')}.`);
+        let eml = p.eail.value.split('at').join('@').split(" ").join('');
+        p.play({"command":"sender","data":eml});
+        p.play('please tell the recievers email'); 
+        p.then(enteremail2); 
+    });
+});
+let enteremail2=context(()=>{
+    intent('$(eail* (.*))',p=>{ 
+        p.play(`The mail that is entered is: ${p.eail.value.split('at').join('@').split(" ").join('')}. `);
+        let eml = p.eail.value.split('at').join('@').split(" ").join('');
+        p.play({"command":"reciever","data":eml});
+        p.play('please tell me the subject of your mail'); 
+        p.then(entersubject); 
+    });
+});
+let entersubject=context(()=>{
+    intent('$(name* (.*))',p=>{ 
+        p.play(`The subject entered is:  ${p.name.value}.`);
+        let msgg = p.name.value;
+        p.play({"command":"subject","data":msgg});
+        p.play('please tell me the message'); 
+        p.then(entermessage); 
+    });
+});
+let entermessage=context(()=>{
+    intent('$(name* (.*))',p=>{ 
+        p.play(`The message entered is:  ${p.name.value}.`);
+        let msgg = p.name.value;
+        p.play({"command":"message","data":msgg});
+        p.play('sending the mail!'); 
+    });
+});
+
+    
+
+ 
