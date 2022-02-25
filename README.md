@@ -14,57 +14,23 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+##### Go through package.json as well to know what you need to install.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Getting Started with Alan SDK for voice commands
 
-### `npm run build`
+You will be required to install alanai first:
+### `npm install @alan-ai/alan-sdk-web`
+Create an account on [Alan platform](https://alan.app/).\
+Go through the docs for [react](https://alan.app/docs/tutorials/web/integrating-react-app/) on how to add Alan button to your project and create a script according to your own convenience.
+### Note: For making alan hear email ids more accurately, try speaking email ids alphabet by alphabet and use 'at' in place of '@'. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Getting started with emailjs
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+You will be required to install emailjs first, run: 
+### `npm install emailjs`
+Create an account on [emailjs](https://www.emailjs.com/).\
+After login create a Gmail service inside the option 'Email Services'.\
+Create an email template as per your own requirements.
+## Note 1: Dont forget to use your own service_id(emailjs), template_id(emailjs), user_id(emailjs) and key(alan ai) inside the project and do read a small documentary [here](https://www.emailjs.com/docs/examples/reactjs/) 
+## Note 2: For personal usage, emailjs will send emails from your registered email id, so dont panic if your mail does not come from senderID :P
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
